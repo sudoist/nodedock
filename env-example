@@ -20,7 +20,7 @@ APP_CODE_PATH_HOST=../
 APP_CODE_PATH_CONTAINER=/var/www:cached
 
 # Choose storage path on your machine. For all storage systems
-DATA_PATH_HOST=~/.nodedock/data
+DATA_PATH_HOST=~/.nodedock/len-api
 
 ### Drivers ################################################
 
@@ -39,7 +39,7 @@ COMPOSE_FILE=docker-compose.yml
 COMPOSE_PATH_SEPARATOR=:
 
 # Define the prefix of container names. This is useful if you have multiple projects that use nodedock to have seperate containers per project.
-COMPOSE_PROJECT_NAME=nodedock
+COMPOSE_PROJECT_NAME=len-api
 
 ### NodeJS Version and Environment#########################
 
@@ -84,7 +84,7 @@ WORKSPACE_INSTALL_LIBPNG=false
 WORKSPACE_PUID=1000
 WORKSPACE_PGID=1000
 WORKSPACE_TIMEZONE=UTC
-WORKSPACE_SSH_PORT=2222
+WORKSPACE_SSH_PORT=2226
 
 ### NODE ###############################################
 
@@ -99,8 +99,8 @@ NODE_NPM_START_SCRIPT=start
 
 ### NGINX #################################################
 
-NGINX_HOST_HTTP_PORT=80
-NGINX_HOST_HTTPS_PORT=443
+NGINX_HOST_HTTP_PORT=84
+NGINX_HOST_HTTPS_PORT=451
 NGINX_HOST_LOG_PATH=./logs/nginx/
 NGINX_SITES_PATH=./nginx/sites/
 NGINX_NODE_UPSTREAM_CONTAINER=node
@@ -198,8 +198,8 @@ RETHINKDB_PORT=8090
 
 ### CADDY #################################################
 
-CADDY_HOST_HTTP_PORT=80
-CADDY_HOST_HTTPS_PORT=443
+CADDY_HOST_HTTP_PORT=84
+CADDY_HOST_HTTPS_PORT=451
 CADDY_HOST_LOG_PATH=./logs/caddy
 CADDY_CUSTOM_CADDYFILE=./caddy/Caddyfile
 

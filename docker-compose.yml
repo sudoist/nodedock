@@ -61,7 +61,7 @@ services:
       extra_hosts:
         - "dockerhost:${DOCKER_HOST_IP}"
       ports:
-        - "${WORKSPACE_SSH_PORT}:22"
+        - "${WORKSPACE_SSH_PORT}:24"
       tty: true
       environment: {}
       networks:
@@ -112,8 +112,8 @@ services:
         - ${NGINX_HOST_LOG_PATH}:/var/log/nginx
         - ${NGINX_SITES_PATH}:/etc/nginx/sites-available
       ports:
-        - "${NGINX_HOST_HTTP_PORT}:80"
-        - "${NGINX_HOST_HTTPS_PORT}:443"
+        - "${NGINX_HOST_HTTP_PORT}:84"
+        - "${NGINX_HOST_HTTPS_PORT}:451"
       depends_on:
         - node
       networks:
@@ -129,8 +129,8 @@ services:
         - ${CADDY_HOST_LOG_PATH}:/var/log/caddy
         - ${DATA_PATH_HOST}:/root/.caddy
       ports:
-        - "${CADDY_HOST_HTTP_PORT}:80"
-        - "${CADDY_HOST_HTTPS_PORT}:443"
+        - "${CADDY_HOST_HTTP_PORT}:84"
+        - "${CADDY_HOST_HTTPS_PORT}:451"
       depends_on:
         - node
       networks:

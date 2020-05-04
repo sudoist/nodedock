@@ -27,4 +27,4 @@ RUN echo "upstream node-upstream { server ${NODE_UPSTREAM_CONTAINER}:${NODE_UPST
 
 CMD ["nginx"]
 
-EXPOSE 80 443
+EXPOSE 84 451
