@@ -99,8 +99,8 @@ NODE_NPM_START_SCRIPT=start
 
 ### NGINX #################################################
 
-NGINX_HOST_HTTP_PORT=84
-NGINX_HOST_HTTPS_PORT=451
+NGINX_HOST_HTTP_PORT=80
+NGINX_HOST_HTTPS_PORT=443
 NGINX_HOST_LOG_PATH=./logs/nginx/
 NGINX_SITES_PATH=./nginx/sites/
 NGINX_NODE_UPSTREAM_CONTAINER=node
@@ -198,8 +198,8 @@ RETHINKDB_PORT=8090
 
 ### CADDY #################################################
 
-CADDY_HOST_HTTP_PORT=84
-CADDY_HOST_HTTPS_PORT=451
+CADDY_HOST_HTTP_PORT=80
+CADDY_HOST_HTTPS_PORT=443
 CADDY_HOST_LOG_PATH=./logs/caddy
 CADDY_CUSTOM_CADDYFILE=./caddy/caddy
 ### BEANSTALKD CONSOLE ####################################
